@@ -1,6 +1,6 @@
 import { ChatResponse } from '../types';
 
-const API_KEY = "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";
+const API_KEY = "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";
 
 export async function chatWithOpenRouter(userInput: string): Promise<ChatResponse> {
   try {
@@ -45,7 +45,7 @@ export async function chatWithOpenRouter(userInput: string): Promise<ChatRespons
   } catch (error) {
     console.error("Error in chatWithOpenRouter:", error);
     return { 
-      response: "Sorry, there was an error. Try again later.", 
+      response: "Exceeded the Limit of the API!", 
       sentiment: "NEUTRAL" 
     };
   }
